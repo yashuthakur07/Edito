@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('design.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Set text color to white */
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #FF69B4;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #008B8B;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yo! I'm Yash Prtaap</h1>
+        <h3>Someone with an everlasting desire to create amazing experiences.</h3>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/yash-pratap-dev/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/yash_singh07_thakur/?hl=en" target="_blank" target="_blank">Instagram</a>
+        </div>
+    </header>
+    <br>
+    <button onclick="downloadAPK()">Download My App</button>
+    <script>
+        function downloadAPK() {
+            // Replace 'app-debug.apk' with the actual path or URL of your APK file
+            window.location.href = 'app-debug.apk';
+        }
+    </script>
+</body>
+</html>

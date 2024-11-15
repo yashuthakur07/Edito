@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310763491519",
+    "project_id": "edito-databse",
+    "storage_bucket": "edito-databse.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310763491519:android:03d6cfae691bb6bbc9360a",
+        "android_client_info": {
+          "package_name": "com.example.edito"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcb_3wvFyYa6Hb7umDQeVwl1ZXNkLWbAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
