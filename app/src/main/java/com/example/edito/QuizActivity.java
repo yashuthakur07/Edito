@@ -42,16 +42,16 @@ public class QuizActivity extends AppCompatActivity {
         butNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RadioGroup grp=(RadioGroup)findViewById(R.id.radioGroup1);
+                RadioGroup grp=(RadioGroup)findViewById(R.id.radioGroup1);   // Get the RadioGroup and Selected Answer:
                 RadioButton answer=(RadioButton)findViewById(grp.getCheckedRadioButtonId());
-                grp.clearCheck();
+                grp.clearCheck();    //Clear RadioGroup Selection:
                 Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());
-                if(currentQ.getANSWER().equals(answer.getText()))
+                if(currentQ.getANSWER().equals(answer.getText()))     //Evaluate Answer and Update Score:
                 {
                     score++;
                     Log.d("score", "Your score"+score);
                 }
-                if(qid<5){
+                if(qid<5){   //Navigate to Next Question or Show Results:
                     currentQ=quesList.get(qid);
                     setQuestionView();
                 }else{
@@ -71,7 +71,9 @@ public class QuizActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.activity_quiz, menu);
         return true;
     }
-    private void setQuestionView()
+    private void setQuestionView()     //This method is responsible for setting the content of the question view.
+
+
     {
         txtQuestion.setText(currentQ.getQUESTION());
         rda.setText(currentQ.getOPTA());
